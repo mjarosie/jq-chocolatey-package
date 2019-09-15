@@ -16,6 +16,9 @@
     <bugTrackerUrl>https://github.com/stedolan/jq/issues</bugTrackerUrl>
     <tags>jq json</tags>
     <summary>Command-line JSON processor</summary>
-    <description>jq is a lightweight and flexible command-line JSON processor</description>
+    <description>`jq` is a lightweight and flexible command-line JSON processor.
+    
+    The Chocolatey package configuration can be found [here](https://github.com/mjarosie/jq-chocolatey-package).
+    </description>
   </metadata>
 </package>
