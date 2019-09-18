@@ -3,22 +3,24 @@
   <metadata>
     <id>jq</id>
     <version>1.6</version>
-    <packageSourceUrl>https://github.com/stedolan/jq</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mjarosie/jq-chocolatey-package</packageSourceUrl>
     <title>jq</title>
     <authors>https://github.com/stedolan/jq/blob/master/AUTHORS</authors>
+    <owners>mjarosie,svnpenn</owners>
     <projectUrl>https://stedolan.github.io/jq/</projectUrl>
-    <iconUrl>https://stedolan.github.io/jq/jq.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/stedolan/jq/37b2d212/docs/public/jq.png</iconUrl>
     <copyright>2012 Stephen Dolan</copyright>
-    <licenseUrl>https://creativecommons.org/licenses/by/3.0/</licenseUrl>
+    <licenseUrl>https://github.com/stedolan/jq/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/stedolan/jq</projectSourceUrl>
     <docsUrl>https://stedolan.github.io/jq/manual/</docsUrl>
     <bugTrackerUrl>https://github.com/stedolan/jq/issues</bugTrackerUrl>
     <tags>jq json</tags>
     <summary>Command-line JSON processor</summary>
-    <description>`jq` is a lightweight and flexible command-line JSON processor.
-    
-    The Chocolatey package configuration can be found [here](https://github.com/mjarosie/jq-chocolatey-package).
-    </description>
+    <description>`jq` is a lightweight and flexible command-line JSON processor.</description>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="jq.nuspec" target="jq.nuspec" />
+  </files>
 </package>
