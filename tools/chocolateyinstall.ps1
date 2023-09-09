@@ -2,12 +2,12 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $fileFullPath = Join-Path $toolsDir "$packageName.exe"
-$url = 'https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win32.exe'
-$checksumType = "sha512"
-$checksum = 'CF4766BACA9CF5F072AE15E2E3D91E974403AB933B892B8D506DC1C3235CA70271971BE1AF13896A4EF1C79F57518ACB9497F0BFEE1CB1D9AC10E97422C30F96'
-$url64 = 'https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe'
-$checksumType64 = "sha512"
-$checksum64 = '58127BAE7B27D963CB4EC19779E5AB0938DB69190EC66985694320AF787E696A8ACD490B967255A7FED4C28EC6A2C2BFCD6EFBB5B85EC2A950B3E318113D5CDE'
+$url = 'https://github.com/stedolan/jq/releases/download/jq-1.7/jq-win32.exe'
+$checksumType = "sha256"
+$checksum = '9500d0300e28a930ab3430a101ca940038b8e82ca441f5c9a1fddaa9d1b770df'
+$url64 = 'https://github.com/stedolan/jq/releases/download/jq-1.7/jq-win64.exe'
+$checksumType64 = "sha256"
+$checksum64 = '2e9cc54d0a5d098e2007decec1dbb3c555ca2f5aabded7aec907fe0ffe401aab'
 
 $packageArgs = @{
     PackageName    = $env:ChocolateyPackageName

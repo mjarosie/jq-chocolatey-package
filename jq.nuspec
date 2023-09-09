@@ -1,20 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>jq</id>
-    <version>1.6</version>
+    <version>1.7</version>
     <packageSourceUrl>https://github.com/mjarosie/jq-chocolatey-package</packageSourceUrl>
-    <title>jq</title>
-    <authors>https://github.com/stedolan/jq/blob/master/AUTHORS</authors>
     <owners>mjarosie,svnpenn</owners>
-    <projectUrl>https://stedolan.github.io/jq/</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/stedolan/jq/37b2d212/docs/public/jq.png</iconUrl>
+    
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>jq</title>
+    <authors>https://github.com/jqlang/jq/blob/master/AUTHORS</authors>
+    <projectUrl>https://jqlang.github.io/jq/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/jqlang/jq/jq-1.7/docs/public/icon.png</iconUrl>
     <copyright>2012 Stephen Dolan</copyright>
     <licenseUrl>https://github.com/stedolan/jq/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/stedolan/jq</projectSourceUrl>
-    <docsUrl>https://stedolan.github.io/jq/manual/</docsUrl>
-    <bugTrackerUrl>https://github.com/stedolan/jq/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/jqlang/jq</projectSourceUrl>
+    <docsUrl>https://jqlang.github.io/jq/manual/v1.7/</docsUrl>
+    <bugTrackerUrl>https://github.com/jqlang/jq/issues</bugTrackerUrl>
     <tags>jq json</tags>
     <summary>Command-line JSON processor</summary>
     <description>`jq` is a lightweight and flexible command-line JSON processor.</description>
