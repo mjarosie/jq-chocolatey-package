@@ -13,7 +13,7 @@
     <projectUrl>https://jqlang.github.io/jq/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/jqlang/jq/jq-1.7/docs/public/icon.png</iconUrl>
     <copyright>2012 Stephen Dolan</copyright>
-    <licenseUrl>https://github.com/stedolan/jq/blob/master/COPYING</licenseUrl>
+    <licenseUrl>https://github.com/jqlang/jq/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/jqlang/jq</projectSourceUrl>
     <docsUrl>https://jqlang.github.io/jq/manual/v1.7/</docsUrl>
