@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>jq</id>
-    <version>1.7</version>
+    <version>1.7.1</version>
     <packageSourceUrl>https://github.com/mjarosie/jq-chocolatey-package</packageSourceUrl>
     <owners>mjarosie,svnpenn</owners>
     
@@ -11,12 +11,12 @@
     <title>jq</title>
     <authors>https://github.com/jqlang/jq/blob/master/AUTHORS</authors>
     <projectUrl>https://jqlang.github.io/jq/</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/jqlang/jq/jq-1.7/docs/public/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/jqlang/jq/jq-1.7.1/docs/public/icon.png</iconUrl>
     <copyright>2012 Stephen Dolan</copyright>
     <licenseUrl>https://github.com/jqlang/jq/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/jqlang/jq</projectSourceUrl>
-    <docsUrl>https://jqlang.github.io/jq/manual/v1.7/</docsUrl>
+    <docsUrl>https://jqlang.github.io/jq/manual/</docsUrl>
     <bugTrackerUrl>https://github.com/jqlang/jq/issues</bugTrackerUrl>
     <tags>jq json</tags>
     <summary>Command-line JSON processor</summary>

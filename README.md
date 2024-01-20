@@ -12,7 +12,7 @@ A repository with chocolatey configuration for `jq` package: https://chocolatey.
 
 ### Building, testing & pushing the package
 
-Given `.nuspec` that this repository contains, to build the `.nupkg` file, run:
+Given `.nuspec` that this repository contains, to build the `.nupkg` file, run the following commands (make sure to run your console as admin):
 
 ```
 choco pack
