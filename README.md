@@ -6,9 +6,11 @@ A repository with chocolatey configuration for `jq` package: https://chocolatey.
 
 ## Updating the chocolatey package
 
-- Update `version` and tags in `./jq.nuspec`
-- Update `url`s and `checksum`s in `./tools/chocolateyinstall.ps1` (get checksums from [the releases page](https://github.com/jqlang/jq/releases/))
+- Update `<version>` / `<iconUrl>` tags in `./jq.nuspec`
+- Update `version` and `checksum`s in `./tools/chocolateyinstall.ps1` (get checksums from [the releases page](https://github.com/jqlang/jq/releases/))
 - Build, test & push the package following instructions below
+
+As of version `1.8.2`, Windows arm64 builds exist upstream (`jq-windows-arm64.exe`), but this package only ships x86/x64 until Chocolatey adds first-class ARM support in its packaging helpers ([choco#1803](https://github.com/chocolatey/choco/issues/1803)).
 
 ### Building, testing & pushing the package
 
