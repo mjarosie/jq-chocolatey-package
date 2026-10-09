@@ -1,0 +1,28 @@
+name: PR status checks
+
+on:
+  pull_request:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  chocolatey-pack-and-install:
+    name: Chocolatey pack and install
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pack
+        run: choco pack
+
+      - name: Install from local source
+        shell: pwsh
+        run: |
+          choco uninstall jq -y --skip-autouninstaller
+          choco install jq --source . -y
+
+      - name: Verify jq
+        run: jq --version

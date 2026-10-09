@@ -6,11 +6,16 @@ A repository with chocolatey configuration for `jq` package: https://chocolatey.
 
 ## Updating the chocolatey package
 
-- Update `version` and tags in `./jq.nuspec`
-- Update `url`s and `checksum`s in `./tools/chocolateyinstall.ps1` (get checksums from [the releases page](https://github.com/jqlang/jq/releases/))
-- Build, test & push the package following instructions below
+- Update `<version>` / `<iconUrl>` tags in `./jq.nuspec`
+- Update `version` and `checksum`s in `./tools/chocolateyinstall.ps1` (get checksums from [the releases page](https://github.com/jqlang/jq/releases/))
+- Create a new branch and create a PR against `main`
+- If status checks pass, merge the PR
 
-### Building, testing & pushing the package
+Package gets published automatically to the Chocolatey Community Repository with every push to the default branch.
+
+As of version `1.8.2`, Windows arm64 builds exist upstream (`jq-windows-arm64.exe`), but this package only ships x86/x64 until Chocolatey adds first-class ARM support in its packaging helpers ([choco#1803](https://github.com/chocolatey/choco/issues/1803)).
+
+### Building, testing & pushing the package manually
 
 Given `.nuspec` that this repository contains, to build the `.nupkg` file, run the following commands (make sure to run your console as admin):
 
@@ -30,7 +35,7 @@ choco upgrade jq --source .
 choco install jq --source .
 ```
 
-Then if you're the maintainer of this Chocolatey repository and want to upgrade the package (e.g. when `jq` got a new release), commit the changes and run:
+To manually publish the package, run:
 
 ```
 choco push -s https://push.chocolatey.org/
