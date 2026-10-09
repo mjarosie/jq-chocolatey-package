@@ -1,0 +1,27 @@
+name: Publish to Chocolatey
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  pack-and-push:
+    name: Pack and push
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pack
+        run: choco pack
+
+      - name: Push to Chocolatey Community Repository
+        env:
+          CHOCOLATEY_API_KEY: ${{ secrets.CHOCOLATEY_API_KEY }}
+        shell: pwsh
+        run: |
+          choco apikey add --source https://push.chocolatey.org/ --key $env:CHOCOLATEY_API_KEY 
+          choco push --source https://push.chocolatey.org/
